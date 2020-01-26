@@ -10,7 +10,7 @@ La première étape consiste à récolter les données contenant les objets cél
 ### Pré-requis
 
 - *Python*
-- *Pandas* si vous voulez manipuler et intégrer de nouvelles deonnées
+- *Pandas* si vous voulez manipuler et intégrer de nouvelles données
 - *SQLite3* pour la manipulation de la base de donnée.
 - etc..
 
@@ -18,7 +18,7 @@ La première étape consiste à récolter les données contenant les objets cél
 
 Développement en cours ....
 
-## Catalogue fabriqué avec les données à partir de: 
+## Catalogue fabriqué avec les données récupérées de: 
 
 * [OpenNGC](https://github.com/mattiaverga/OpenNGC)
 * [Messier catalogue](https://github.com/jbcurtin/messier-catalogue)
