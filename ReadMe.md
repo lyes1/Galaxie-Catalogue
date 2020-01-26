@@ -18,7 +18,7 @@ La première étape consiste à récolter les données contenant les objets cél
 
 Développement en cours ....
 
-## Catalogue fabriqué avec les données de
+## Catalogue fabriqué avec les données à partir de: 
 
 * [OpenNGC](https://github.com/mattiaverga/OpenNGC)
 * [Messier catalogue](https://github.com/jbcurtin/messier-catalogue)
