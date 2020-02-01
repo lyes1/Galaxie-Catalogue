@@ -1,7 +1,7 @@
 # Catalogue des galaxies
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://tldrlegal.com/license/apache-license-2.0-%28apache-2.0%29#summary)
 
-Création d'une API pour intéroger un catalogue sur les objets célestes les plus célèbres.
+Création d'une API pour interroger un catalogue sur les objets célestes les plus célèbres.
 
 ## Pour commencer
 
