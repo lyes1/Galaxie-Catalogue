@@ -34,6 +34,7 @@ Développement en cours ....
 * **Lyes BOUALI** [@lyes1](https://github.com/lyes1)
 * **Branda CHIRATA**  [@brendachirata](https://github.com/brendachirata)
 * **Chérif DIOP**  [@]()
+* **NDIAYE MARIAMA**  [@]()
 
 ## License
 
