@@ -4,6 +4,7 @@
 - Lyes BOUALI
 - Branda CHIRATA
 - Chérif DIOP
+- MARIAMA NDIAYE 
 
 ## Données du catalogue
 - Numéro NGC de l'objet,
