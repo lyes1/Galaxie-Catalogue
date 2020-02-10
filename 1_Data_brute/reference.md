@@ -9,3 +9,5 @@ messier_with_picture_links_jbcurtin_gitHub.csv : https://github.com/jbcurtin/mes
 
 'Herschel_astro_tom.csv' : http://www.astro-tom.com/technical_data/files_to_download.htm
 
+
+https://www.downloadexcelfiles.com/wo_en/download-excel-file-list-constellations#.Xj7g6CXjLxs : list-constellations-677j.csv
