@@ -1,14 +1,15 @@
-import os
-import flask
 from flask import request, jsonify
+from flask import render_template
 import sqlite3
 
-# Database location relative path
-database_path = os.path.join("..", "3_Database_creation", "cataloqueSqlite.db")
 
-app = flask.Flask(__name__)
-app.config["DEBUG"] = True # delete
+@app.route('/')
+def hello():
+    return "Hello World!"
 
+@app.route('/signUp')
+def signUp():
+    return render_template('signUp.html')
 
 def dict_factory(cursor, row):
     d = {}
@@ -32,9 +33,8 @@ def api_all():
     cur = conn.cursor()
     all_cat_objects = cur.execute('SELECT * FROM '+cat+';').fetchall()
 
-    return jsonify(all_cat_objects)
-
-
+    #return jsonify(all_cat_objects)
+    return render_template('layouts/base.html', title='Result', objects=all_cat_objects)
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -73,5 +73,3 @@ def api_filter():
     results = cur.execute(query, to_filter).fetchall()
 
     return jsonify(results)
-
-app.run()
