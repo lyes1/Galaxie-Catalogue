@@ -1,9 +1,15 @@
-import flask
 from flask import request, jsonify
+from flask import render_template
 import sqlite3
 
-app = flask.Flask(__name__)
-app.config["DEBUG"] = True
+
+@app.route('/')
+def hello():
+    return "Hello World!"
+
+@app.route('/signUp')
+def signUp():
+    return render_template('signUp.html')
 
 def dict_factory(cursor, row):
     d = {}
@@ -18,23 +24,24 @@ def home():
 <p>A prototype API for distant reading of science fiction novels.</p>'''
 
 
-@app.route('/api/v1/resources/books/all', methods=['GET'])
+@app.route('/api/v1/resources/celestialObjetcs', methods=['GET'])
 def api_all():
-    conn = sqlite3.connect('books.db')
+    query_parameters = request.args
+    cat = query_parameters.get('cat')
+    conn = sqlite3.connect(database_path)
     conn.row_factory = dict_factory
     cur = conn.cursor()
-    all_books = cur.execute('SELECT * FROM books;').fetchall()
+    all_cat_objects = cur.execute('SELECT * FROM '+cat+';').fetchall()
 
-    return jsonify(all_books)
-
-
+    #return jsonify(all_cat_objects)
+    return render_template('layouts/base.html', title='Result', objects=all_cat_objects)
 
 @app.errorhandler(404)
 def page_not_found(e):
     return "<h1>404</h1><p>The resource could not be found.</p>", 404
 
 
-@app.route('/api/v1/resources/books', methods=['GET'])
+@app.route('/api/v1/resources/celestialObjetcs', methods=['GET'])
 def api_filter():
     query_parameters = request.args
 
@@ -66,5 +73,3 @@ def api_filter():
     results = cur.execute(query, to_filter).fetchall()
 
     return jsonify(results)
-
-app.run()
