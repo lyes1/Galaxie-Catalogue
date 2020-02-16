@@ -26,7 +26,12 @@ def results():
     cur = conn.cursor()
     cat = "Messier"
     all_cat_objects = cur.execute('SELECT * FROM '+cat+';').fetchall()
-    print (jsonify(all_cat_objects))
-    return jsonify(all_cat_objects)
-    #return json.dumps([{'status':'OK','user':user,'pass':password}, {'status':'OK','user':user,'pass':password}])
-    #return render_template('/resultats.html')
+    
+    # Saving the order of the columns after the jsonifying process
+    results = []
+    if (len(all_cat_objects)!=0):
+        keys = list(all_cat_objects[0].keys())
+        results.append(keys)
+        results.append(all_cat_objects)  
+    return jsonify(results)
+    #return jsonify([])
