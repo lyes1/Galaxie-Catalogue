@@ -11,10 +11,14 @@ def dict_factory(cursor, row):
 
 
 
-@routes.route('/api/celestialObjetcs/results', methods=['POST', 'GET'])
-def results():
-    user =  request.form['username']
-    password = request.form['password']
+@routes.route('/api/celestialObjetcs/results', methods=['GET'])
+def results(name=None):
+    query_parameters = request.args
+
+    username = query_parameters.get('username')
+    print(username)
+    password= query_parameters.get('passs')
+    print(password)
 
     database_path = os.path.join("..", "3_Database_creation", "cataloqueSqlite.db")
     query_parameters = request.args
