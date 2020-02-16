@@ -1,3 +1,4 @@
+// Fonction à exécuter après apui sur le bouton ok
 $(function(){
 	$('button').click(function(){
 		var user = $('#inputUsername').val();
@@ -8,22 +9,27 @@ $(function(){
 			type: 'POST',
 			dataType : 'json', // Le type de données à recevoir, ici, du HTML.
 			success: function(response){
-			   //$('#showresults').replaceWith($('#showresults',response));
-				console.log(response);
-				drawTable(response)
-				//$("#result").html(response); 
-				//$('page').html(response)
+				if (response.length != 0){
+					drawTable(response)
+				}
+				else {
+					$('#data_display').append('<p class="h2">No Data found !</p>');
+				}
+				
 			},
 			error: function(error){
-				alert("Sorry, there was a problem!");
-				console.log(error);
-		
+				alert("Sorry, there was a problem!");		
 			}
 		});
 	});
 });
 
+
+// fonction appelée après le renvoi des données depuis le serveur à fin d'insérer la table des données
 function drawTable(data) {
+	var keys = data[0]
+	var objects = data[1]
+	console.log(objects)
 	var col_name = []
 	for(var key in data[0]){
 		col_name.push(key)
@@ -31,14 +37,28 @@ function drawTable(data) {
 
 	var html = '<thead>';
 
-	col_name.forEach (elm => html += '<th>' + elm + '</th>')
+	keys.forEach (elm => html += '<th>' + elm + '</th>')
 
 	html += '</thead><tbody>';
 
-	$.each(data, function(k, v){
-        html += '<tr><td>' + v.user + '</td><td>' + v.pass + '</td><td>' + v.status + '</td></tr>';
+	$.each(objects, function(k, v){
+		html += '<tr>';
+		keys.forEach (elm => html += '<td>' + v[elm] + '</td>');
+		html += '</tr>';
    }); 
    html += '</tbody>'; 
-   console.log(html);
-   $('#tableau').append(html);
+
+   $('#dtHorizontalVerticalExample').append(html);
+
+// ajout de style DataTable
+   $(document).ready(function () {
+	$('#dtHorizontalVerticalExample').DataTable({
+	"scrollX": true,
+	"scrollY": 500,
+	});
+	$('.dataTables_length').addClass('bs-select');
+	});
   }
+
+
+ 
