@@ -7,7 +7,7 @@ from pony.orm import Database, Required, Optional, PrimaryKey
 
 db = Database()
 
-# Déckaration des entities reliées aux objets de la base de donnée: messier, cladwell et Herschel400 dans notre cas 
+# Déclaration des entities reliées aux objets de la base de donnée: messier, cladwell et Herschel400 dans notre cas 
 class Messier(db.Entity):
         '''
         Table de messier
