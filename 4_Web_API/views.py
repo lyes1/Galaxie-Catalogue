@@ -1,7 +1,7 @@
 from flask import request, jsonify
 from flask import render_template
 import sqlite3
-
+#
 def dict_factory(cursor, row):
     d = {}
     for idx, col in enumerate(cursor.description):
