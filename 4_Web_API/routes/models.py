@@ -3,24 +3,12 @@ Module qui définie la connexion à la base de données en utilisant
 la librarie Pony comme ORM (object-relational mapper)
 Ref: https://docs.ponyorm.org/queries.html
 '''
-import os
-from pony.orm import *
+from pony.orm import Database, Required, Optional, PrimaryKey
 
-def connectionDatabase():
-    '''
-    Fonction qui définie l'ORM
-    Para : chemin vers la base de donnée
-    return : l'objet Database
-    '''
-    database_path = os.path.join("..", "..", "3_Database_creation", "cataloqueSqlite.db")
+db = Database()
 
-    db = Database()
-
-    # Connexion de l'objet database à la base de donnée 'cataloqueSqlite'
-    db.bind('sqlite', database_path, create_db=True)
-
-    # Déckaration des entities reliées aux objets de la base de donnée: messier, cladwell et Herschel400 dans notre cas 
-    class Messier(db.Entity):
+# Déckaration des entities reliées aux objets de la base de donnée: messier, cladwell et Herschel400 dans notre cas 
+class Messier(db.Entity):
         '''
         Table de messier
         '''
@@ -63,7 +51,7 @@ def connectionDatabase():
         NED_notes = Optional(str)
         OpenNGC_notes = Optional(str)
 
-    class Caldwell(db.Entity):
+class Caldwell(db.Entity):
         '''
         Table de caldwell
         '''
@@ -96,7 +84,7 @@ def connectionDatabase():
         NED_notes = Optional(str)
         OpenNGC_notes = Optional(str)
 
-    class Herschel400(db.Entity):
+class Herschel400(db.Entity):
         '''
         Table de Herschel400
         '''
@@ -130,18 +118,13 @@ def connectionDatabase():
         NED_notes = Optional(str)
         OpenNGC_notes = Optional(str)
 
-    set_sql_debug(True)
+ 
 
-    # Connexion des entities aux tables de la base de données 'cataloqueSqlite'
-    db.generate_mapping(create_tables=True)
-
-    #data = db.select("select * from Messier where Messier_number = M1")
-    #print(data)
-    return db
-
-@db_session
+#@db_session
 def select_object(db, table, object):
     print("test")
+    #p = Messier["M1"]
+    #print (db.Messier.select())
     return db.select("select * from Messier where Messier_number = 'M1'")
     #return select(o for o in table
      #           if o.Messier_number == object)

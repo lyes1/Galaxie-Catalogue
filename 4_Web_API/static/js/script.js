@@ -43,14 +43,17 @@ $(document).ready(function(){
 // Fonction à exécuter après apui sur le bouton ok
 $(function(){
 	$('#submit').click(function(){
-		var cat = document.getElementById('cat').value;;
-		var checked_option_radio = $('input:radio[name=defaultExampleRadios]:checked').val();
-		console.log(cat)
-		//var user = $('#inputUsername').val();
+		var cat = document.getElementById('cat').value;
+		var scope = $('input:radio[name=defaultExampleRadios]:checked').val();
+		var objNum = document.getElementById('objNumText').value;
+		var NGCDes = document.getElementById('NGCDesText').value;
+		var Const = document.getElementById('ConstText').value;
+		//console.log(objNum)
+
 		//var pass = $('#inputPassword').val();
 		$.ajax({
 			url: '/api/celestialObjetcs/results',
-			data: $.param({"cat": cat, "pass":"pass"}),//$('form').serialize(),
+			data: $.param({"cat": cat, "scope":scope, "objNum":objNum, "NGCDes":NGCDes, "Const":Const}),//$('form').serialize(),
 			type: 'GET',
 			dataType : 'json', // Le type de données à recevoir, ici, du HTML.
 			success: function(response){
@@ -73,6 +76,7 @@ $(function(){
 
 // fonction appelée après le renvoi des données depuis le serveur à fin d'insérer la table des données
 function drawTable(data) {
+	document.getElementById("subForm").reset();
 	var keys = data[0]
 	var objects = data[1]
 	//var col_name = []
@@ -97,7 +101,6 @@ function drawTable(data) {
 
    //$('#dtHorizontalVerticalExample').append(html);
    $("#data_display").html(html);
-   console.log(html)
 
 // ajout de style DataTable
 $(document).ready(function() {
