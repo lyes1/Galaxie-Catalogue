@@ -2,15 +2,6 @@ from flask import request, jsonify
 from flask import render_template
 import sqlite3
 
-
-@app.route('/')
-def hello():
-    return "Hello World!"
-
-@app.route('/signUp')
-def signUp():
-    return render_template('signUp.html')
-
 def dict_factory(cursor, row):
     d = {}
     for idx, col in enumerate(cursor.description):
@@ -35,11 +26,6 @@ def api_all():
 
     #return jsonify(all_cat_objects)
     return render_template('layouts/base.html', title='Result', objects=all_cat_objects)
-
-@app.errorhandler(404)
-def page_not_found(e):
-    return "<h1>404</h1><p>The resource could not be found.</p>", 404
-
 
 @app.route('/api/v1/resources/celestialObjetcs', methods=['GET'])
 def api_filter():

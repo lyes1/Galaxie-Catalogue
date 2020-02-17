@@ -1,8 +1,11 @@
+# coding: utf-8
+#
 from flask import Flask, render_template, request, json, jsonify
 from . import routes
-
 import sqlite3
+from pony.orm import db_session
 import os
+
 def dict_factory(cursor, row):
     d = {}
     for idx, col in enumerate(cursor.description):
@@ -12,8 +15,11 @@ def dict_factory(cursor, row):
 
 
 @routes.route('/api/celestialObjetcs/results', methods=['GET'])
+@db_session
 def results(name=None):
+    # Lecture des paramètres
     query_parameters = request.args
+    cat = query_parameters.get('cat')
 
     username = query_parameters.get('username')
     print(username)
@@ -28,7 +34,6 @@ def results(name=None):
     conn = sqlite3.connect(database_path)
     conn.row_factory = dict_factory
     cur = conn.cursor()
-    cat = "Messier"
     all_cat_objects = cur.execute('SELECT * FROM '+cat+';').fetchall()
     
     # Saving the order of the columns after the jsonifying process

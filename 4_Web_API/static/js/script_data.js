@@ -1,86 +1,37 @@
-
-$(document).ready(function(){
-    $('#defaultUnchecked').click(function(){
-        $('#collapseSpec').collapse('show'); //to show
-    });
-    $('#defaultChecked').click(function(){
-        $('#collapseSpec').collapse('hide');  //to hide
-    });
-});
-
-$(document).ready(function(){
-	$('#NGCDes').click(function(){
-		$('#collapseObjNum').collapse('hide'); 
-		$('#collapseNGCDes').collapse('show');
-		$('#collapseConst').collapse('hide');
-	});
-    $('#objNum').click(function(){
-		$('#collapseObjNum').collapse('show'); //to show
-		$('#collapseNGCDes').collapse('hide');
-		$('#collapseConst').collapse('hide');
-    });
-
-	$('#Const').click(function(){
-		$('#collapseObjNum').collapse('hide'); 
-		$('#collapseNGCDes').collapse('hide');
-		$('#collapseConst').collapse('show');
-    });
-});
-
-$(document).ready(function(){
-    $('#NGCDes').click(function(){
-		$('#collapseObjNum').collapse('hide'); //to show
-		$('#collapseNGCDes').collapse('show');
-		$('#collapseConst').collapse('hide');
-	});
-	$('#Const').click(function(){
-		$('#collapseObjNum').collapse('hide'); //to show
-		$('#collapseNGCDes').collapse('hide');
-		$('#collapseConst').collapse('show');
-    });
-});
-
 // Fonction à exécuter après apui sur le bouton ok
 $(function(){
 	$('#submit').click(function(){
-		var cat = document.getElementById('cat').value;;
-		var checked_option_radio = $('input:radio[name=defaultExampleRadios]:checked').val();
-		console.log(cat)
-		//var user = $('#inputUsername').val();
-		//var pass = $('#inputPassword').val();
-		$.ajax({
-			url: '/api/celestialObjetcs/results',
-			data: $.param({"cat": cat, "pass":"pass"}),//$('form').serialize(),
-			type: 'GET',
-			dataType : 'json', // Le type de données à recevoir, ici, du HTML.
-			success: function(response){
+		var user = $('#inputUsername').val();
+        var pass = $('#inputPassword').val();
+
+        $.pony.load('/api/celestialObjetcs/results', {
+            data: {"user": user, "pass":pass},
+            success: function (response) {
 				if (response.length != 0){
 					drawTable(response)
 				}
 				else {
 					$('#data_display').append('<p class="h2">No Data found !</p>');
 				}
-				
-			},
-			error: function(error){
+            },
+            error: function(error){
 				alert("Sorry, there was a problem!");		
 			}
-		});
+        });
 	});
 });
-
 
 
 // fonction appelée après le renvoi des données depuis le serveur à fin d'insérer la table des données
 function drawTable(data) {
 	var keys = data[0]
 	var objects = data[1]
-	//var col_name = []
-	//for(var key in data[0]){
-	//	col_name.push(key)
-	//}
+	var col_name = []
+	for(var key in data[0]){
+		col_name.push(key)
+	}
 
-	var html ='<table id="dtHorizontalVerticalExample" class="table table-striped table-bordered table-sm " cellspacing="0" width="100%"><thead>';
+	var html = '<thead>';
 
 	keys.forEach (elm => html += '<th>' + elm + '</th>')
 
@@ -91,13 +42,9 @@ function drawTable(data) {
 		keys.forEach (elm => html += '<td>' + v[elm] + '</td>');
 		html += '</tr>';
    }); 
-   html += '</tbody></table>';
+   html += '</tbody>'; 
 
-   //$('#dtHorizontalVerticalExample').innerHTML = '';
-
-   //$('#dtHorizontalVerticalExample').append(html);
-   $("#data_display").html(html);
-   console.log(html)
+   $('#dtHorizontalVerticalExample').append(html);
 
 // ajout de style DataTable
 $(document).ready(function() {
@@ -141,6 +88,7 @@ function convertToCSV(objArray) {
 }
 
 function exportCSVFile(headers, items, fileTitle) {
+	console.log(items)
     if (headers) {
         items.unshift(headers);
     }
