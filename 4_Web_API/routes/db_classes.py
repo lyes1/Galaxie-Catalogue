@@ -12,7 +12,7 @@ def connectionDatabase(db, dataBasePath):
     return : l'objet Database
     '''
 
-    # Déckaration des entities reliées aux objets de la base de donnée: messier, cladwell et Herschel400 dans notre cas 
+    # Déclaration des entities reliées aux objets de la base de donnée: messier, cladwell et Herschel400 dans notre cas 
     class Messier(db.Entity):
         '''
         Table de messier
@@ -125,10 +125,10 @@ def connectionDatabase(db, dataBasePath):
 
     set_sql_debug(True)
 
-    # Connexion de l'objet database à la base de donnée 'cataloqueSqlite'
+    # Connexion de l'objet database à la base de donnée 'catalogueSqlite'
     #db.bind(provider='sqlite', filename=dataBasePath)
 
-    # Connexion des entities aux tables de la base de données 'cataloqueSqlite'
+    # Connexion des entities aux tables de la base de données 'catalogueSqlite'
     db.generate_mapping(create_tables=True)
 
     #data = db.select("select * from Messier where Messier_number = M1")
