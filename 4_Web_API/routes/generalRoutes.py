@@ -19,7 +19,7 @@ def api():
 
 @routes.route('/api/doc')
 def doc():
-    return render_template('doc.html')
+    return render_template('documentation.html')
 
 @routes.route('/api/about')
 def about():

@@ -3,6 +3,5 @@
 from flask import Blueprint
 routes = Blueprint('routes', __name__)
 
-from .index import *
-from .objects import * 
-from .models import *
+from .generalRoutes import *
+from .objectsRoute import * 
