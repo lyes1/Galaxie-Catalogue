@@ -1,4 +1,4 @@
-
+#
 $(document).ready(function(){
     $('#defaultUnchecked').click(function(){
         $('#collapseSpec').collapse('show'); //to show
