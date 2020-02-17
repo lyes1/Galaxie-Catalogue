@@ -41,6 +41,6 @@ Dans le catalogue de **Messier**, on trouve **110 objets** observables en haute 
 - ajout d'informations complémentaires sur chaque objet avec carte celestre.
 
 ## Technologies indispensables 
-- Pandas pourla consolidation des données
+- Pandas pour la consolidation des données
 - SQLite pour la consolidation et le stockage  des données récupérées depuis les trois catalogues ,
 - Interface graphique et design.
