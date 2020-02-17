@@ -1,0 +1,93 @@
+SNo,Constellation,IAU abbreviation,Other abbreviation,Genitive,Family,Origin,Meaning,Brightest star
+1,Andromeda,And,Andr,Andromedae,Perseus,ancient (Ptolemy),Andromeda (The chained lady or the Princess),Alpheratz
+2,Antlia,Ant,Antl,Antliae,La Caille,"1763, Lacaille",air pump,? Antliae
+3,Apus,Aps,Apus,Apodis,Bayer,"1603, , created by Keyser and de Houtman",Bird-of-paradise,? Apodis
+4,Aquarius,Aqr,Aqar,Aquarii,Zodiac,ancient (Ptolemy),water-bearer,Sadalsuud
+5,Aquila,Aql,Aqil,Aquilae,Hercules,ancient (Ptolemy),eagle,Altair
+6,Ara,Ara,Arae,Arae,Hercules,ancient (Ptolemy),altar,? Arae
+7,Aries,Ari,Arie,Arietis,Zodiac,ancient (Ptolemy),ram,Hamal
+8,Auriga,Aur,Auri,Aurigae,Perseus,ancient (Ptolemy),charioteer,Capella
+9,Boötes,Boo,Boot,Boötis,Ursa Major,ancient (Ptolemy),herdsman,Arcturus
+10,Caelum,Cae,Cael,Caeli,La Caille,"1763, Lacaille",chisel,? Caeli
+11,Camelopardalis,Cam,Caml,Camelopardalis,Ursa Major,"1613, Plancius",giraffe,? Camelopardalis
+12,Cancer,Cnc,Canc,Cancri,Zodiac,ancient (Ptolemy),crab,Tarf
+13,Canes Venatici,CVn,CVen,Canum Venaticorum,Ursa Major,"1690, , Hevelius",hunting dogs,Cor Caroli
+14,Canis Major,CMa,CMaj,Canis Majoris,Orion,ancient (Ptolemy),greater dog,Sirius
+15,Canis Minor,CMi,CMin,Canis Minoris,Orion,ancient (Ptolemy),lesser dog,Procyon
+16,Capricornus,Cap,Capr,Capricorni,Zodiac,ancient (Ptolemy),sea goat,Deneb Algiedi
+17,Carina,Car,Cari,Carinae,Heavenly Waters,"1763, Lacaille, split from Argo Navis",keel,Canopus
+18,Cassiopeia,Cas,Cass,Cassiopeiae,Perseus,ancient (Ptolemy),Cassiopeia (mythological character),Shedir
+19,Centaurus,Cen,Cent,Centauri,Hercules,ancient (Ptolemy),centaur,Alpha Centauri
+20,Cepheus,Cep,Ceph,Cephei,Perseus,ancient (Ptolemy),Cepheus (mythological character),Alderamin
+21,Cetus,Cet,Ceti,Ceti,Perseus,ancient (Ptolemy),sea monster (later interpreted as a whale),Deneb Kaitos
+22,Chamaeleon,Cha,Cham,Chamaeleontis,Bayer,"1603, , created by Keyser and de Houtman",chameleon,? Chamaeleontis
+23,Circinus,Cir,Circ,Circini,La Caille,"1763, Lacaille",compass (drawing tool),? Circini
+24,Columba,Col,Colm,Columbae,Heavenly Waters,"1592, Plancius, split from Canis Major",dove,Phact
+25,Coma Berenices,Com,Coma,Comae Berenices,Ursa Major,"1603, , split from Leo",Berenice's hair,? Comae Berenices
+26,Corona Australis,CrA,CorA,Coronae Australis,Hercules,ancient (Ptolemy),southern crown,Alphekka Meridiana
+27,Corona Borealis,CrB,CorB,Coronae Borealis,Ursa Major,ancient (Ptolemy),northern crown,Alphecca
+28,Corvus,Crv,Corv,Corvi,Hercules,ancient (Ptolemy),crow,Gienah
+29,Crater,Crt,Crat,Crateris,Hercules,ancient (Ptolemy),cup,Labrum
+30,Crux,Cru,Cruc,Crucis,Hercules,"1603, , split from Centaurus",southern cross,Acrux
+31,Cygnus,Cyg,Cygn,Cygni,Hercules,ancient (Ptolemy),swan or Northern Cross,Deneb
+32,Delphinus,Del,Dlph,Delphini,Heavenly Waters,ancient (Ptolemy),dolphin,Rotanev
+33,Dorado,Dor,Dora,Doradus,Bayer,"1603, , created by Keyser and de Houtman",goldfish,? Doradus
+34,Draco,Dra,Drac,Draconis,Ursa Major,ancient (Ptolemy),dragon,Etamin
+35,Equuleus,Equ,Equl,Equulei,Heavenly Waters,ancient (Ptolemy),pony,Kitalpha
+36,Eridanus,Eri,Erid,Eridani,Heavenly Waters,ancient (Ptolemy),river Eridanus (mythology),Achernar
+37,Fornax,For,Forn,Fornacis,La Caille,"1763, Lacaille",chemical furnace,Fornacis
+38,Gemini,Gem,Gemi,Geminorum,Zodiac,ancient (Ptolemy),twins,Pollux
+39,Grus,Gru,Grus,Gruis,Bayer,"1603, , created by Keyser and de Houtman",Crane,Alnair
+40,Hercules,Her,Herc,Herculis,Hercules,ancient (Ptolemy),Hercules (mythological character),Kornephoros
+41,Horologium,Hor,Horo,Horologii,La Caille,"1763, Lacaille",pendulum clock,? Horologii
+42,Hydra,Hya,Hyda,Hydrae,Hercules,ancient (Ptolemy),Hydra (mythological creature),Alphard
+43,Hydrus,Hyi,Hydi,Hydri,Bayer,"1603, , created by Keyser and de Houtman",lesser water snake,? Hydri
+44,Indus,Ind,Indi,Indi,Bayer,"1603, , created by Keyser and de Houtman",Indian (American indigenous),The Persian
+45,Lacerta,Lac,Lacr,Lacertae,Perseus,"1690, , Hevelius",lizard,? Lacertae
+46,Leo,Leo,Leon,Leonis,Zodiac,ancient (Ptolemy),lion,Regulus
+47,Leo Minor,LMi,LMin,Leonis Minoris,Ursa Major,"1690, , Hevelius",lesser lion,Praecipua
+48,Lepus,Lep,Leps,Leporis,Orion,ancient (Ptolemy),hare,Arneb
+49,Libra,Lib,Libr,Librae,Zodiac,ancient (Ptolemy),balance,Zubeneshamali
+50,Lupus,Lup,Lupi,Lupi,Hercules,ancient (Ptolemy),wolf,Men
+51,Lynx,Lyn,Lync,Lyncis,Ursa Major,"1690, , Hevelius",lynx,Elvashak
+52,Lyra,Lyr,Lyra,Lyrae,Hercules,ancient (Ptolemy),lyre / harp,Vega
+53,Mensa,Men,Mens,Mensae,La Caille,"1763, Lacaille",Table Mountain (South Africa),? Mensae
+54,Microscopium,Mic,Micr,Microscopii,La Caille,"1763, Lacaille",microscope,? Microscopii
+55,Monoceros,Mon,Mono,Monocerotis,Orion,"1613, Plancius",unicorn,? Monocerotis
+56,Musca,Mus,Musc,Muscae,Bayer,"1603, , created by Keyser and de Houtman",fly,? Muscae
+57,Norma,Nor,Norm,Normae,La Caille,"1763, Lacaille",carpenter's level,?2 Normae
+58,Octans,Oct,Octn,Octantis,La Caille,"1763, Lacaille",octant (instrument),? Oct
+59,Ophiuchus,Oph,Ophi,Ophiuchi,Hercules,ancient (Ptolemy),serpent-bearer,Ras Alhague
+60,Orion,Ori,Orio,Orionis,Orion,ancient (Ptolemy),Orion (mythological character),Rigel
+61,Pavo,Pav,Pavo,Pavonis,Bayer,"1603, , created by Keyser and de Houtman",peacock,Peacock
+62,Pegasus,Peg,Pegs,Pegasi,Perseus,ancient (Ptolemy),Pegasus (mythological winged horse),Enif
+63,Perseus,Per,Pers,Persei,Perseus,ancient (Ptolemy),Perseus (mythological character),Mirfak
+64,Phoenix,Phe,Phoe,Phoenicis,Bayer,"1603, , created by Keyser and de Houtman",phoenix,Ankaa
+65,Pictor,Pic,Pict,Pictoris,La Caille,"1763, Lacaille",easel,? Pictoris
+66,Pisces,Psc,Pisc,Piscium,Zodiac,ancient (Ptolemy),fishes,Alpherg
+67,Piscis Austrinus,PsA,PscA,Piscis Austrini,Heavenly Waters,ancient (Ptolemy),southern fish,Fomalhaut
+68,Puppis,Pup,Pupp,Puppis,Heavenly Waters,"1763, Lacaille, split from Argo Navis",poop deck,Naos
+69,Pyxis,Pyx,Pyxi,Pyxidis,Heavenly Waters,"1763, Lacaille",mariner's compass,? Pyxidis
+70,Reticulum,Ret,Reti,Reticuli,La Caille,"1763, Lacaille",eyepiece graticule,? Reticuli
+71,Sagitta,Sge,Sgte,Sagittae,Hercules,ancient (Ptolemy),arrow,? Sagittae
+72,Sagittarius,Sgr,Sgtr,Sagittarii,Zodiac,ancient (Ptolemy),archer,Kaus Australis
+73,Scorpius,Sco,Scor,Scorpii,Zodiac,ancient (Ptolemy),scorpion,Antares
+74,Sculptor,Scl,Scul,Sculptoris,La Caille,"1763, Lacaille",sculptor,? Sculptoris
+75,Scutum,Sct,Scut,Scuti,Hercules,"1690, , Hevelius",shield (of Sobieski),? Scuti
+76,Serpens,Ser,Serp,Serpentis,Hercules,ancient (Ptolemy),snake,Unukalhai
+77,Sextans,Sex,Sext,Sextantis,Hercules,"1690, , Hevelius",sextant,? Sextantis
+78,Taurus,Tau,Taur,Tauri,Zodiac,ancient (Ptolemy),bull,Aldebaran
+79,Telescopium,Tel,Tele,Telescopii,La Caille,"1763, Lacaille",telescope,? Telescopii
+80,Triangulum,Tri,Tria,Trianguli,Perseus,ancient (Ptolemy),triangle,? Trianguli
+81,Triangulum Australe,TrA,TrAu,Trianguli Australis,Hercules,"1603 , created by Keyser and de Houtman",southern triangle,Atria
+82,Tucana,Tuc,Tucn,Tucanae,Bayer,"1603 , created by Keyser and de Houtman",toucan,? Tucanae
+83,Ursa Major,UMa,UMaj,Ursae Majoris,Ursa Major,ancient (Ptolemy),great bear,Alioth
+84,Ursa Minor,UMi,UMin,Ursae Minoris,Ursa Major,ancient (Ptolemy),lesser bear,Polaris
+85,Vela,Vel,Velr,Velorum,Heavenly Waters,"1763, Lacaille, split from Argo Navis",sails,Regor
+86,Virgo,Vir,Virg,Virginis,Zodiac,ancient (Ptolemy),virgin or maiden,Spica
+87,Volans,Vol,Voln,Volantis,Bayer,"1603, , created by Keyser and de Houtman",flying fish,? Volantis
+88,Vulpecula,Vul,Vulp,Vulpeculae,Hercules,"1690, , Hevelius",fox,Anser
+,,,,,,,,
+For other more formats kindly visit www.downloadexcelfiles.com,,,,,,,,
+,,,,,,,,
+Original source : en.wikipedia.org/wiki/List_of_constellations,,,,,,,,
