@@ -52,7 +52,7 @@
 
   
     <div class="container">
-        <form role="form">
+        <form id="subForm" role="form">
         <h2 class="form-heading">Recherche</h2>
 
         <div class="form-inline row">
@@ -79,21 +79,21 @@
                 <input type="radio" class="custom-control-input1" id="objNum" name="specSerach"  value="objNum" >
                 <label for="objNum" class="col-sm-2 col-form-label">Object Number</label>
                 <div id="collapseObjNum" class="collapse">
-                <input type="text" class="form-control" id="objNum" name="specSerach" placeholder="M1 or C1 (NGC0000 if Herschel400)")>
+                <input type="text" class="form-control" id="objNumText" name="specSerach" placeholder="M1 or C1 (NGC0000 if Herschel400)")>
                 </div>
             </div>
             <div class="form-group row" >
                 <input type="radio" class="custom-control-input1" id="NGCDes" name="specSerach"  value="NGCDes">
                 <label for="NGCDes" class="col-sm-2 col-form-label">NGC Designation</label>
                 <div id="collapseNGCDes" class="collapse">
-                <input type="text" class="form-control" id="NGCDes" placeholder="NGC0000">
+                <input type="text" class="form-control" id="NGCDesText" placeholder="NGC0000">
               </div>
             </div>
             <div class="form-group row">
                 <input type="radio" class="custom-control-input1" id="Const" name="specSerach"  value="Const">
                 <label for="Const" class="col-sm-2 col-form-label">Constellation Name</label>
                 <div id="collapseConst" class="collapse">
-                  <input type="text" class="form-control" id="Const" placeholder="Latin name">
+                  <input type="text" class="form-control" id="ConstText" placeholder="Latin name">
                 </div>
             </div>
         </div>
