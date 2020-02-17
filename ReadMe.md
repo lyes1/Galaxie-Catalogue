@@ -33,7 +33,7 @@ Développement en cours ....
 ## Auteurs
 * **Lyes BOUALI** [@lyes1](https://github.com/lyes1)
 * **Branda CHIRATA**  [@brendachirata](https://github.com/brendachirata)
-* **Chérif DIOP**  [@]()
+* **Chérif DIOP**  [@](https://github.com/cherifdiop)
 * **NDIAYE MARIAMA**  [@]()
 
 ## License
