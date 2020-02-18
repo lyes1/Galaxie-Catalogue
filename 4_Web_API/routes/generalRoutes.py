@@ -5,7 +5,7 @@ from . import routes
 
 @routes.errorhandler(404)
 def page_not_found(e):
-    return "<h1>404</h1><p>The resource could not be found.</p>", 404
+    return render_template('404.html'), 404
 
 #Redirection vers la page de l'API
 @routes.route('/')

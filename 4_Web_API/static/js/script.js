@@ -57,11 +57,13 @@ $(function(){
 			type: 'GET',
 			dataType : 'json', // Le type de données à recevoir, ici, du HTML.
 			success: function(response){
+                console.log(response)
 				if (response.length != 0){
 					drawTable(response)
 				}
 				else {
-					$('#data_display').append('<p class="h2">No Data found !</p>');
+                    document.getElementById("subForm").reset();
+					$('#data_display').html('<p class="h2">No Data found !</p>');
 				}
 				
 			},
