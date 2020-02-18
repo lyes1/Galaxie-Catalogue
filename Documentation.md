@@ -1,9 +1,8 @@
-
 # Documentation 
 ## Plan
-**- [Préparation des données](#prep)**
-**- [Complétude des données](#comp)**
-**- [Utilisation de la Web API](#use)**
+- **[Préparation des données](#prep)**
+- **[Complétude des données](#comp)**
+- **[Utilisation de la Web API](#use)**
 ## Préparation des données <a id="prep"></a>
 Nous avons choisi de créer une web API permettant de récupérer des données concernant les trois catalogues  (Messier, Caldwell et Heschel400) qui recensent les objets célestes les plus visibles ayant un intérêt pour les astronomes amateurs.  Nous avons récolté les données qui peuple nos catalogues à partir de plusieurs sources qui sont listées dans le dossier [1_Data_brute](https://github.com/lyes1/Galaxie-Catalogue/tree/master/1_Data_brute) avec leurs références dans le doc [reference.md](https://github.com/lyes1/Galaxie-Catalogue/blob/master/1_Data_brute/reference.md). 
 Le notebook [catalogues_merge.ipynb](https://github.com/lyes1/Galaxie-Catalogue/blob/master/2_Data_preparation/catalogues_merge.ipynb) illustre les manipulations pas à pas pour vérifier et fusionner les données à partir des sources collectées. Ce notebook fournit en sortie les fichiers csv contenant les données nettoyées et mergées (Voir le dossier [2_Data_preparation](https://github.com/lyes1/Galaxie-Catalogue/tree/master/2_Data_preparation)).
@@ -39,6 +38,5 @@ Pour utiliser l'API, il faut suivre ce [lien](http://lyes.pythonanywhere.com/api
 		 - Pour Hershel400 : il faut saisir  **NGC** suivi d'un numéro NGC composé de quatre chiffres (ajout des 0 au milieu si c'est nécessaire). Ex : il faut saisir 'NGC0001' pour NGC 1 et 'NGC1234' pour NGC 1234.
 	- On peut effectuer la recherche en spécifiant la désignation NGC de l'objet. Pour cela, il faut sélectionner **NGC Designation**. Puis saisir **NGC** suivi d'un numéro NGC composé de quatre chiffres (ajout des 0 au milieu si c'est nécessaire).
 	- On a aussi l'option de récupérer les objets appartenant à une constellation donnée. Il faut sélectionner **Constellation Name** puis saisir le nom en **latin** de la constellation.
-
 
 
