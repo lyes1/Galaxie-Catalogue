@@ -12,18 +12,24 @@ La première étape consiste à récolter les données contenant les objets cél
 - *Python*
 - *Pandas* si vous voulez manipuler et intégrer de nouvelles données
 - *SQLite3* pour la manipulation de la base de donnée.
-- etc..
+- *Flask*
 
-### Installation
+### Utilsation de l'API en ligne
+L'API est accessible en production pour la tester et l’interroger sous l'URL [lyes.pythonanywhere.com/api/celestialObjetcs](http://lyes.pythonanywhere.com/api/celestialObjetcs). Pour plus d'informations sur l'utilisation de l'API veuillez consulter la section **Utilisation de la Web API** dans le document [Documentation.md](https://github.com/lyes1/Galaxie-Catalogue/blob/master/Documentation.md#use).
 
-Développement en cours ....
+### Contribution et amélioration
 
-## Catalogue fabriqué avec les données récupérées de: 
+La contribution peut être réalisée sur plusieurs niveaux :
+- Améliorer la complétion des données (Voir les sections [Préparation des données](https://github.com/lyes1/Galaxie-Catalogue/blob/master/Documentation.md#prep) et [Complétude des données](https://github.com/lyes1/Galaxie-Catalogue/blob/master/Documentation.md#comp)).
+- Améliorer les performances de l'application en migrant vers une base de données plus performante et intégration d'un ORM tel que Pony.
+
+## Catalogue fabriqué avec les données récupérées de notamment: 
 
 * [OpenNGC](https://github.com/mattiaverga/OpenNGC)
 * [Messier catalogue](https://github.com/jbcurtin/messier-catalogue)
 * [Messier catalogue of Datastro](https://www.datastro.eu/explore/dataset/catalogue-de-messier/table/?disjunctive.objet&disjunctive.mag&disjunctive.english_name_nom_en_anglais&disjunctive.french_name_nom_francais&disjunctive.latin_name_nom_latin&sort=messier)
-* [Messier, Caldwell, Hescheller 400 and NGC catalogues](https://www.nexstarsite.com/Book/DSO.htm)
+* [Messier, Caldwell, Heschel400 and NGC catalogues](https://www.nexstarsite.com/Book/DSO.htm)
+* Voir [reference.md](https://github.com/lyes1/Galaxie-Catalogue/blob/master/1_Data_brute/reference.md) pour la liste exhaustive.
 
 
 ## Versions
@@ -34,7 +40,7 @@ Développement en cours ....
 * **Lyes BOUALI** [@lyes1](https://github.com/lyes1)
 * **Branda CHIRATA**  [@brendachirata](https://github.com/brendachirata)
 * **Chérif DIOP**  [@cherifdiop](https://github.com/cherifdiop)
-* **NDIAYE MARIAMA**  [@]()
+* **NDIAYE MARIAMA**  [@Mariaman](https://github.com/Mariaman)
 
 ## License
 

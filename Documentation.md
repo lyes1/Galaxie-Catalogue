@@ -38,5 +38,5 @@ Pour utiliser l'API, il faut suivre ce [lien](http://lyes.pythonanywhere.com/api
 		 - Pour Hershel400 : il faut saisir  **NGC** suivi d'un numéro NGC composé de quatre chiffres (ajout des 0 au milieu si c'est nécessaire). Ex : il faut saisir 'NGC0001' pour NGC 1 et 'NGC1234' pour NGC 1234.
 	- On peut effectuer la recherche en spécifiant la désignation NGC de l'objet. Pour cela, il faut sélectionner **NGC Designation**. Puis saisir **NGC** suivi d'un numéro NGC composé de quatre chiffres (ajout des 0 au milieu si c'est nécessaire).
 	- On a aussi l'option de récupérer les objets appartenant à une constellation donnée. Il faut sélectionner **Constellation Name** puis saisir le nom en **latin** de la constellation.
-
+- Le résultat (les objets) sont affichés sous forme de tableau directement consultable. Les objets peuvent être téléchargé sous forme de fichier csv.
 
