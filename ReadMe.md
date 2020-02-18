@@ -5,7 +5,7 @@ Création d'une API pour interroger un catalogue sur les objets célestes les pl
 
 ## Pour commencer
 
-La première étape consiste à récolter les données contenant les objets célestes. Nous avons assemblé les objets listés dans 3 catalogues bien connus (Messier, Caldwell et Hescheller 400). Ainsi, on a une base de données constituée de **558 objets**. Puis, nous avons enrichi les descriptions de nos objets avec des données présentes, notamment dans le catalogue NGC  de [OpenNGC](https://github.com/mattiaverga/OpenNGC) et des images pour certains objets.
+La première étape consiste à récolter les données contenant les objets célestes. Nous avons assemblé les objets listés dans 3 catalogues bien connus (Messier, Caldwell et Heschel400). Ainsi, on a une base de données constituée de **558 objets**. Puis, nous avons enrichi les descriptions de nos objets avec des données présentes, notamment dans le catalogue NGC  de [OpenNGC](https://github.com/mattiaverga/OpenNGC) et des images pour certains objets.
 
 ### Pré-requis
 
