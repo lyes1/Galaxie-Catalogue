@@ -1,5 +1,11 @@
 # coding: utf-8
+<<<<<<< HEAD:4_Web_API/utils/utils.py
 #
+=======
+##
+from flask import Flask, render_template, request, json, jsonify
+from . import routes
+>>>>>>> 9a57087a01c2a0695f31c1a58eb68939c5ceb5cd:4_Web_API/routes/objects.py
 import sqlite3
 import os
 
@@ -11,7 +17,7 @@ def dict_factory(cursor, row):
     return d
 
 def retrieve_all(catalogue):
-    database_path = os.path.join("cataloqueSqlite.db&")
+    database_path = os.path.join("..", "3_Database_creation", "cataloqueSqlite.db")
     conn = sqlite3.connect(database_path)
     conn.row_factory = dict_factory
     cur = conn.cursor()

@@ -11,11 +11,5 @@ app.config["DEBUG"] = True # delete
 # Ref https://stackoverflow.com/questions/15231359/split-python-flask-app-into-multiple-files
 app.register_blueprint(routes)
 
-def dict_factory1(cursor, row):
-    d = {}
-    for idx, col in enumerate(cursor.description):
-        d[col[0]] = row[idx]
-    return d
-
 if __name__=="__main__":
     app.run()      
