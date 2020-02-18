@@ -3,6 +3,7 @@
 import sqlite3
 import os
 
+database_path = os.path.join("..", "3_Database_creation", "cataloqueSqlite.db")
 
 def dict_factory(cursor, row):
     d = {}
@@ -11,7 +12,6 @@ def dict_factory(cursor, row):
     return d
 
 def retrieve_all(catalogue):
-    database_path = os.path.join("cataloqueSqlite.db&")
     conn = sqlite3.connect(database_path)
     conn.row_factory = dict_factory
     cur = conn.cursor()
@@ -19,7 +19,6 @@ def retrieve_all(catalogue):
     return all_cat_objects
 
 def retrieve_spec(catalogue, objNum, NGCDes, Const):
-    database_path = os.path.join("..", "3_Database_creation", "cataloqueSqlite.db")
     conn = sqlite3.connect(database_path)
     conn.row_factory = dict_factory
     cur = conn.cursor()
